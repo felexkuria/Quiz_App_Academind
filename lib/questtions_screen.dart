@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import 'package:quiz_app/question_button.dart';
@@ -33,7 +32,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
       width: double.infinity,
       child: Container(
         margin: const EdgeInsets.symmetric(
-            vertical: 10, horizontal: kIsWeb ? 1080 / 1.8 : 100),
+            vertical: 10, horizontal: 40),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
