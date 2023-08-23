@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:quiz_app/question_button.dart';
+import 'package:quiz_app/widgets/question_button.dart';
 import 'package:quiz_app/questions.dart';
 import 'package:google_fonts/google_fonts.dart';
 
