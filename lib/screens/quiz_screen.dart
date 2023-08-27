@@ -31,13 +31,24 @@ class _QuizState extends State<Quiz> {
 
   List<String> selectedAnswers = [];
 
+  void onRestart() {
+    setState(() {
+      selectedAnswers == [];
+      activeScreen ==
+          StartScreen(
+            startQuiz: changeScreen,
+          );
+    });
+  }
+
   void chooseAnswer(String answer) {
     selectedAnswers.add(answer);
     if (selectedAnswers.length == questions.length) {
       setState(() {
-        selectedAnswers = [];
+        //   selectedAnswers = [];
         activeScreen = ResultScreen(
           choosenAnswers: selectedAnswers,
+          onRestart: () {},
         );
       });
     } else {}
